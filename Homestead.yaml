@@ -12,7 +12,7 @@ folders:
 sites:
     -
         map: beauty.test
-        to: /home/vagrant/code/web
+        to: /home/vagrant/beauty/public
         type: symfony4
 databases:
     - beauty
