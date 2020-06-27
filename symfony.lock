@@ -81,6 +81,9 @@
     "egulias/email-validator": {
         "version": "2.1.18"
     },
+    "laravel/homestead": {
+        "version": "v10.9.2"
+    },
     "monolog/monolog": {
         "version": "2.1.0"
     },
@@ -94,7 +97,7 @@
         "version": "2.2.3"
     },
     "php": {
-        "version": "7.3"
+        "version": "7.4"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"

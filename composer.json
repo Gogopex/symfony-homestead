@@ -31,6 +31,7 @@
         "symfony/yaml": "5.1.*"
     },
     "require-dev": {
+        "laravel/homestead": "^10.9",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",

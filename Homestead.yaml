@@ -1,0 +1,27 @@
+ip: 192.168.10.11
+memory: 2048
+cpus: 2
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /Users/ludovic.pouey/dev/beauty
+        to: /home/vagrant/beauty
+sites:
+    -
+        map: beauty.test
+        to: /home/vagrant/code/web
+        type: symfony4
+databases:
+    - beauty
+features:
+    -
+        mariadb: false
+    -
+        ohmyzsh: false
+    -
+        webdriver: false
+name: beauty
+hostname: beauty
