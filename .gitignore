@@ -6,6 +6,8 @@ app/bootstrap*
 # Vagrant
 .vagrant/
 
+Homestead.yaml
+
 # Env
 .env
 
