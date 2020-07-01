@@ -2,18 +2,21 @@ ip: 192.168.10.11
 memory: 2048
 cpus: 2
 provider: virtualbox
-authorize: ~/.ssh/MLP_KEY.pub
+authorize: ~/.ssh/id_rsa.pub
 keys:
-    - ~/.ssh/MLP_KEY
+    - ~/.ssh/id_rsa
 folders:
     -
-        map: /Users/alexis.geron/www/modern-beauty
+        map: .
         to: /home/vagrant/beauty
+        type: "nfs"
 sites:
     -
         map: beauty.test
         to: /home/vagrant/beauty/public
         type: symfony4
+        php: "7.3"
+
 databases:
     - beauty
 features:
