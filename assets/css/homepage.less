@@ -1,3 +1,64 @@
 body {
     background-color: @blue;
 }
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    &__banner {
+        width: 100%;
+        flex: 1;
+        background: yellow;
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: row;
+        @media @mobile-only {
+            flex-direction: column;
+        }
+        justify-content: space-between;
+        overflow: hidden;
+        .block {
+            height: 200px;
+            width: 100%;
+            background: url('https://placehold.it/150x150/ff0000');
+            .clickable();
+            .zooms();
+            &:first-child {
+                background: url('https://placehold.it/150x150/b69ac6');
+            }
+            &:last-child {
+                background: url('https://placehold.it/150x150/aaf7d5');
+            }
+        }
+    }
+    &__perks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: green;
+        padding: 25px 0;
+        @media @desktop-only {
+            flex-direction: row;
+        }
+        .perk {
+            display: flex;
+            flex-direction: row;
+            @media @mobile-only {
+                margin-bottom: 15px;
+            }
+            &__image, &__text {
+                flex-basis: 50%;
+            }
+            &__image {
+                text-align: center;
+                .clickable();
+                .zooms();
+            }
+            &__text {
+                align-self: center;
+            }
+        }
+    }
+}

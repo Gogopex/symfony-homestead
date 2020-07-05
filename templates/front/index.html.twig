@@ -4,13 +4,39 @@
 
 {% block body %}
     {% include '/front/partials/header.html.twig' %}
-    <div class="example-wrapper">
-        <h1>Hello {{ controller_name }}! ✅</h1>
-
-        This friendly message is coming from:
-        <ul>
-            <li>Your controller at <code><a href="{{ '/home/vagrant/beauty/src/Controller/FrontController.php'|file_link(0) }}">src/Controller/FrontController.php</a></code></li>
-            <li>Your template at <code><a href="{{ '/home/vagrant/beauty/templates/front/index.html.twig'|file_link(0) }}">templates/front/index.html.twig</a></code></li>
-        </ul>
+    {# {% include '/front/partials/floating_banner.html.twig' %} #}
+    <div class="homepage">
+        <div class="homepage__banner"></div>
+        <div class="homepage__blocks">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="homepage__perks">
+            <div class="perk">
+                <div class="perk__image">
+                    <img src='https://placehold.it/150x150' alt=''/>
+                </div>
+                <div class="perk__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, natus!
+                </div>
+            </div>
+            <div class="perk">
+                <div class="perk__image">
+                    <img src='https://placehold.it/150x150' alt=''/>
+                </div>
+                <div class="perk__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, natus!
+                </div>
+            </div>
+            <div class="perk">
+                <div class="perk__image">
+                    <img src='https://placehold.it/150x150' alt=''/>
+                </div>
+                <div class="perk__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, natus!
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
