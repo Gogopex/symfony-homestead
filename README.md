@@ -1,4 +1,4 @@
-# Modern Beauty
+# Wasm Playground
 
 > Symfony 5 project, Homestead v10
 
@@ -14,6 +14,6 @@ vagrant plugin install vagrant-bindfs
 
 - vagrant up
 - vagrant ssh
-- cd /beauty
+- cd /wasm-playground
 - composer install
-- access beauty.test
+- access wasm-playground.test
