@@ -8,17 +8,17 @@ keys:
 folders:
     -
         map: .
-        to: /home/vagrant/beauty
+        to: /home/vagrant/{{name_of_your_projet}}
         type: "nfs"
 sites:
     -
-        map: beauty.test
-        to: /home/vagrant/beauty/public
+        map: {{name_of_your_projet}}.test
+        to: /home/vagrant/{{name_of_your_projet}}/public
         type: symfony4
-        php: "7.3"
+        php: "7.4"
 
 databases:
-    - beauty
+    - {{name_of_your_database}}
 features:
     -
         mariadb: false
@@ -26,5 +26,5 @@ features:
         ohmyzsh: false
     -
         webdriver: false
-name: beauty
-hostname: beauty
+name: {{name_of_your_projet}}
+hostname: {{name_of_your_projet}}

@@ -56,6 +56,15 @@ Encore
     // enables LESS support
     .enableLessLoader()
 
+    // enables PostCss support: see postcss.config.js for more info
+    .enablePostCssLoader()
+
+    // https://symfony.com/doc/current/frontend/encore/url-loader.html
+    .configureUrlLoader({
+        // fonts: { limit: 4096 },
+        images: { limit: 4096 }
+    })
+
 // uncomment if you use TypeScript
 //.enableTypeScriptLoader()
 
