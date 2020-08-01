@@ -2,6 +2,7 @@
 
 
 > Symfony 5 project, Homestead v10
+
 > Includes basic reset + sanitize less files
 
 
