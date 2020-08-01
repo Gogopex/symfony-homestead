@@ -26,6 +26,7 @@ Note: this is the first and only time you'll be running `composer` outside of th
 - open `Homestead.yaml` 
   - replace `{{name_of_your_projet}}` by the name of your project
   - replace `{{name_of_your_database}}` by the name of your database
+- `mv .env.test .env`
 
 - `vagrant up`
 - `vagrant ssh`
