@@ -8,6 +8,8 @@
 
 ## Prerequisites
 ```
+composer (to install Homestead locally)
+
 virtualbox
 
 vagrant >= 1.9.5
