@@ -30,8 +30,8 @@ Note: this is the first and only time you'll be running `composer` outside of th
 
 - `vagrant up`
 - `vagrant ssh`
-- cd /{{name_of_your_project}}
-- composer install
+- `cd /{{name_of_your_project}}`
+- `composer install`
 - access {{name_of_your_project}}.test
 
 You can find out more about Homestead and how to configure it here:
