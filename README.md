@@ -1,6 +1,9 @@
 # Boilerplate to set up a `Symfony` project with a VM using `Homestead`.
 
+
 > Symfony 5 project, Homestead v10
+> Includes basic reset + sanitize less files
+
 
 ## Prerequisites
 ```
